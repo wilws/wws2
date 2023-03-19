@@ -1,40 +1,18 @@
-$max-width: 1600px;
 
-.main-container {
-    position:relative;
-    width:100vw;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    .head{
-        width:100%;
-        max-width: $max-width;
-        border:red solid thin;
-
-    }
     
     .main{
         position: relative;
         width:100%;
         max-width: 1000px;
-
-        height:100%;
+        gap:10px;
         display: flex;
         flex-wrap: wrap;
         border: white solid thin;
+        overflow: scroll;
         & > div {
             width:25%;
-            height:20px;
         }
     }
-    .foot{
-         width:100%;
-         max-width: $max-width;
-          border:red solid thin
-    }
-}
+
+// 
 

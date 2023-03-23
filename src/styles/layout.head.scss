@@ -1,48 +1,76 @@
-    .head {
-        width:100%;
-        height: 70px;
-        padding: 10px 30px;
-        display: flex;
-        justify-content: space-between;
-        z-index: 10;
-        margin-bottom: 60px;
+$screen-width-2sm: 375px;
+$screen-width-sm: 640px;
+$screen-width-md: 768px;
+$screen-width-lg: 1024px;
+$screen-width-xl: 1280px;
+$screen-width-2xl: 1536px;
+
+// @media (min-width: $screen-width-sm) {}
+// @media (min-width: $screen-width-md) {}
+// @media (min-width: $screen-width-lg) {}
+// @media (min-width: $screen-width-xl) {}
+// @media (min-width: $screen-width-2xl) {} 
+ 
+ .head {
+    width: 100%;
+    height: 64px;
+    max-height: 64px;
+    min-width: $screen-width-2sm;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    margin-bottom: 60px;
+  
+    @media (min-width:400px) {
+          justify-content: space-between;
+    }
+    @media (min-width: $screen-width-md) {}
+    @media (min-width: $screen-width-lg) {}
+    @media (min-width: $screen-width-xl) {}
+    @media (min-width: $screen-width-2xl) {} 
 
 
-        h1 {
-            font-family:"Helvetica Neue";
-            margin-top: 10px;
-            font-weight: 500;
-            text-transform: uppercase;
-            font-size: 20px;
-            text-shadow: 10px 10px 9px rgba(0, 0, 0, 0.363);
-            letter-spacing: 10px;
-            color: rgb(19, 19, 19);
-        }
+    h1 {
+        position: relative;
+        font-family:"Helvetica Neue";
+        width:40%;
+        max-width:170px;
+        margin-left: 10px;
+        line-height:20px;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 20px;
+        text-shadow: 10px 10px 9px rgba(71, 71, 71, 0.226);
+        letter-spacing: 7px;
+        color: rgb(0, 0, 0);
+    }
 
 
-        button {
-            width:fit-content;
-            min-width:140px;
-            text-transform: uppercase;
-            color:rgb(0, 0, 0);
-            border-radius: 10px;
-            background-color: white;
-            border: rgb(0, 0, 0) double 4px;
-            transition: background-color 1s, border 2s, color 2s;
-            letter-spacing: 2.5px;
-            font-size: 14px;
-            transform:translateY(5px);
+    button {
+        width:40%;
+        max-width:170px;
+        min-width:140px;
+        height:40px;
+        background-color: white;
+        border: rgb(0, 0, 0) double 4px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color:rgb(0, 0, 0);
+        letter-spacing: 2.5px;
+        font-size: 14px;
+        transition: background-color 1s, border 2s, color 2s;
+  
+        @media (min-width: $screen-width-md) {}
+        @media (min-width: $screen-width-lg) {}
+        @media (min-width: $screen-width-xl) {}
+        @media (min-width: $screen-width-2xl) {} 
 
-            @media screen and (min-width: 1180px) {
-                padding: 2px 90px;
-                letter-spacing: 5px;
-                font-size: 20px;
-                padding: 2px 90px;
-            }
-            &.display {
-                background-color: black;
-                color:white;
-                border: rgb(255, 255, 255) double 4px;
-            }
+  
+        &.display {
+            background-color: black;
+            color:white;
+            border: rgb(255, 255, 255) double 4px;
         }
     }
+}

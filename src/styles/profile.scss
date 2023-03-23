@@ -1,165 +1,319 @@
 $profile-width:100vw;
 $profile-height:100vh;
 
+$screen-width-2sm: 375px;
+$screen-width-sm: 640px;
+$screen-width-md: 768px;
+$screen-width-lg: 1024px;
+$screen-width-xl: 1280px;
+$screen-width-2xl: 1536px;
+
+// @media (min-width: $screen-width-sm) {}
+// @media (min-width: $screen-width-md) {}
+// @media (min-width: $screen-width-lg) {}
+// @media (min-width: $screen-width-xl) {}
+// @media (min-width: $screen-width-2xl) {}
+
+
+// profile/Skills.tsx
+.profile-skills {
+    li{
+        position: relative;
+        width:100%;
+        list-style-type:disc;
+        font-size: 15px;
+        margin-bottom: 20px;
+        font-weight: 100;
+        letter-spacing: 5px;
+        margin-left: 20px;
+          
+        @media (min-width: $screen-width-sm) {
+            font-size: 20px;
+        }
+        @media (min-width: $screen-width-md) {}
+        @media (min-width: $screen-width-lg) {
+            margin-bottom: 10px;
+        }
+        @media (min-width: $screen-width-xl) {}
+        @media (min-width: $screen-width-2xl) {
+            font-size: 20px;
+        }
+    }
+}
+
+// profile/Picture.tsx
+.profile-picture {
+    position: relative;
+    width:150px;
+    height:150px;
+    
+    border:rgb(75, 75, 75) solid 2px;
+    overflow: hidden;
+    // float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    &>* {
+        width:100%;
+        height: fit-content !important;
+        object-fit:fill;
+    }
+
+    @media (min-width: $screen-width-sm) {
+        width:255px;
+        height:255px;
+    }
+    @media (min-width: $screen-width-md) {}
+    @media (min-width: $screen-width-lg) {
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    @media (min-width: $screen-width-xl) {
+        transform: translateX(20%);;
+    }
+    @media (min-width: $screen-width-2xl) {
+        width:300px;
+        height:300px;
+    }
+}
+
+// profile/Quote.tsx
+.profile-quote {         
+    position: relative;
+    width:100%;
+    padding-left: 30%;
+    text-align: right;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-width-sm) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    @media (min-width: $screen-width-md) {
+         padding-left: 50%;
+    }
+    @media (min-width: $screen-width-lg) {   
+        font-size: 30px;
+        line-height: 30px; 
+        padding-left: 0%;
+    }
+    @media (min-width: $screen-width-xl) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    @media (min-width: $screen-width-2xl) {
+          font-size: 45px;
+        line-height: 45px;
+    }
+}
+
+// profile/Article.tsx
+.profile-article {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 2px;
+    width:fit-content;
+    padding-right: 20%;
+
+
+    @media (min-width: $screen-width-sm) {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    @media (min-width: $screen-width-md) {}
+    @media (min-width: $screen-width-lg) {
+        font-size: 20px;
+        line-height: 30px;
+        padding-right: 30px;
+    }
+    @media (min-width: $screen-width-xl) {}
+    @media (min-width: $screen-width-2xl) {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+// profile/SocialIcons.tsx
+.profile-social-icons {
+    text-align: left;
+    list-style-type: none;
+    display: flex; 
+    padding-top: 20px;
+    overflow: hidden;
+    
+    li {
+        margin-right: 10px;
+        &>*{
+         
+            width:30px !important;
+            height:30px !important;
+            @media (min-width: $screen-width-sm) {}
+            @media (min-width: $screen-width-md) {}
+            @media (min-width: $screen-width-lg) {
+                width:35px !important;
+                height:35px !important;
+            }
+            @media (min-width: $screen-width-xl) {}
+            @media (min-width: $screen-width-2xl) {}
+        }
+    }
+    @media (min-width: $screen-width-sm) {}
+    @media (min-width: $screen-width-md) {}
+    @media (min-width: $screen-width-lg) {
+        float: right;
+    }
+    @media (min-width: $screen-width-xl) {
+        padding-right: 30px;
+        padding-top: 100px;
+  
+    }
+    @media (min-width: $screen-width-2xl) {}
+}
+
+// --------- / profile/Profile.tsx ------- /
 
 .profile {
     position:fixed;
     left:100%;
-    top:100px;
-    z-index: 3;
+    top:80px;
     width:$profile-width;
-    height: calc($profile-height - 100px);
+    height: calc($profile-height - 80px); // minus the top value
+    margin:0;
+    padding:0;
+    z-index: 3;
     background-color: rgb(0, 0, 0);
-    border: black solid 4px;
+    border: rgb(0, 0, 0) solid 4px;
     transition: left 1s,visibility 0s,opacity 0s;
     overflow-y:scroll;
     overflow-x: hidden;
 
-    @media screen and (min-width: 1180px) {
-         top:90px;
-          height: calc($profile-height - 90px);
-    }
+    @media (min-width: $screen-width-sm) {}
+    @media (min-width: $screen-width-md) {}
+    @media (min-width: $screen-width-lg) {}
+    @media (min-width: $screen-width-xl) {}
+    @media (min-width: $screen-width-2xl) {}
 
 
     .profile-detail {
+
         position: absolute;
-        padding: 30px;
-        left:0;
-        top:0;
         width:100%;
         height:fit-content;
+        padding: 20px;
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
         overflow: scroll;
         min-width: 375px;
-
-        @media screen and (min-width: 1180px) {
-            flex-direction: row-reverse;
-        }
-
+        max-width: 1500px;
 
         & > section {
             position: relative;
             width:100%;
             color:white;
             font-family:"Helvetica Neue";
+            overflow: hidden;
         }
 
-        .left {
-            width:100%;
-            border-right: 1px solid white;
-            h3 {
-                font-weight: 500;
-                font-size: 20px;
-                letter-spacing: 4px;
-                margin-bottom: 40px;
-                @media screen and (min-width: 1180px) {
-                    font-size: 25px;
-                }
-                @media screen and (min-width: 1600px) {
-                        font-size: 30px;
-                }
-            }
+        @media (min-width: $screen-width-sm) {
+            gap: 50px;
+        }
+        @media (min-width: $screen-width-md) {}
+        @media (min-width: $screen-width-lg) {
+            left:0;
+            top:0;
+            bottom:0;
+            right:0;
+            margin: auto;
+            flex-direction: row;
+            & :nth-child(1){order:1}
+            & :nth-child(2){order:3}
+            & :nth-child(3){order:2}
+            padding: 50px;
+        }
+        @media (min-width: $screen-width-xl) {}
+        @media (min-width: $screen-width-2xl) {}
 
-            ul {
-                padding-left: 30px;
-                li{
-                    list-style-type:disc;
-                    font-size: 15px;
-                    margin-bottom: 20px;
-                    font-weight: 100;
-                    letter-spacing: 5px;
-                    @media screen and (min-width: 1180px) {
-                        font-size: 15px;
-                    }
-                    @media screen and (min-width: 1600px) {
-                        font-size: 20px;
-                    }
-                }
+
+
+
+        .top-left {
+            width:100%;
+           
+            @media (min-width: $screen-width-sm) {
+                padding-right: 10px;
             }
+            @media (min-width: $screen-width-md) {}
+            @media (min-width: $screen-width-lg) {
+                 border-right: 1px solid white;
+            }
+            @media (min-width: $screen-width-xl) {}
+            @media (min-width: $screen-width-2xl) {}
+ 
         }
 
         .middle {
             width:100%;
             margin-top: 30px;
-            div {
-                .profilePic {
-                    width:100%;
-                    height: fit-content !important;
-                    object-fit:fill;
-                }
+            display: flex;
+            flex-direction: column;
+            // height:fit-content;
+            justify-content: flex-start;
+            align-items: center;
+            gap:30px;
+            padding-bottom: 10px;
+            border-bottom: white solid thin;
+            @media (min-width: $screen-width-sm) {}
+            @media (min-width: $screen-width-md) {}
+            @media (min-width: $screen-width-lg) {
+                 border-bottom: none;
+                 justify-content: flex-end;
             }
-       
-        }
+            @media (min-width: $screen-width-xl) {}
+            @media (min-width: $screen-width-2xl) {}
 
-        .right {
+        }        
+
+        .bottom-right {
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 50px;
-
-            q {
-                font-size: 30px;
-                line-height: 30px;
-                text-align: left;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                padding-bottom: 30px;
-                border-bottom: 8px solid rgb(163, 161, 161);
-                @media screen and (min-width: 820px) {
-                    font-size: 40px;
-                    line-height: 40px;
-                }
-                @media screen and (min-width: 1180px) {
-                   text-align: right;
-                    border-bottom: 5px solid rgb(163, 161, 161);
-                }
-                @media screen and (min-width: 1600px) {
-                    font-size: 60px;
-                    line-height: 55px;
-                    border-bottom: 8px solid rgb(163, 161, 161);
-                }
-         
+            // gap: 50px;
+            padding-bottom: 20px;
+            border-bottom: white solid thin;
+            @media (min-width: $screen-width-sm) {}
+            @media (min-width: $screen-width-md) {}
+            @media (min-width: $screen-width-lg) {
+                 border-bottom: none
             }
+            @media (min-width: $screen-width-xl) {}
+            @media (min-width: $screen-width-2xl) {}
 
-            article {
-     
+
+            h3 {
+                width:100%;
+                font-weight: 500;
                 font-size: 20px;
-                font-weight: 100;
-                line-height: 30px;
-                letter-spacing: 2px;
-                text-align: left;
-
-                @media screen and (min-width: 820px) {
-                    font-size: 30px;
-                    line-height: 40px;
-                    
+                letter-spacing: 4px;
+                margin-bottom: 20px;
+   
+                @media (min-width: $screen-width-sm) {
+                    font-size: 25px;
                 }
-
-                // @media screen and (min-width: 1180px) {
-                //     font-size: 20px;
-                    
-                // }
-                @media screen and (min-width: 1600px) {
-                    letter-spacing: 3px;
-                    font-size: 30px;
-                    line-height: 40px;
-                }
-            }
-
-            .social-media {
-                text-align: left;
-                span {
-                    margin-right: 10px;
-                }
+                @media (min-width: $screen-width-md) {}
+                @media (min-width: $screen-width-lg) {}
+                @media (min-width: $screen-width-xl) {}
+                @media (min-width: $screen-width-2xl) {}
             }
         }
-
     }
-
-  
-
 
     &.display{
         left:0;

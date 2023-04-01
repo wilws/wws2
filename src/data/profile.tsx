@@ -1,11 +1,10 @@
 const profile = {
-  introduction: `I am  an ordinary individual who enjoys coding.I have been playing around with frontend tools for 5+ years. 
-As a holder of a Postgraduate Diploma in Financial Management, I design Python tools that assist in trading stocks and options.`,
+  introduction: `I am passionate about coding and have been experimenting with various frontend tools for over five years. Along with my love for coding, I hold a Postgraduate Diploma in Financial Management. I combine my knowledge of finance with my coding skills to design Python tools that assist with trading stocks and options.`,
   email: "wilson.ws.pro@gmail.com ",
   socials: [
-    { 
+    {
       platform: "github",
-      link: "https://github.com/wilws/"
+      link: "https://github.com/wilws/",
     },
     {
       platform: "blog",
@@ -14,7 +13,7 @@ As a holder of a Postgraduate Diploma in Financial Management, I design Python t
     {
       platform: "linkedIn",
       link: "https://www.linkedin.com/in/wilson-wong-8a1a19253/",
-    }
+    },
   ],
   skills: [
     "JavaScript",

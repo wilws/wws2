@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import '@/styles/box.scss';
+import "@/styles/list.scss";
 import "@/styles/app.scss";
 import "@/styles/layout.main.scss";
 import "@/styles/layout.foot.scss";

@@ -13,7 +13,7 @@ export default function Home() {
    
       <Head/>
       <Main/>
-      <Foot/>
+
     </div>
   )
 }

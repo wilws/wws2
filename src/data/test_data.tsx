@@ -1,264 +1,223 @@
 
-const projects =[
+const projects = [
   {
-    id: 1,
-    projectType: "React",
-    projectYear: "2023",
-    projectName: "NC-NEWS",
-    // projectIconUrl: require(""),
-    // projectDescription: 1,
-    techs: ["ReactJs", "SCSS", "Redux", "NodeJs", "ExpressJs", "PSQL", "Jest"],
-    description: `NC-News is a full-stack assignment during my Northcoders course. 
-        The purpose of this assignment is to build a React application and Node server from scratch. 
-        Moreover, this assignment is also a practice of developing software with an Agile approach - 
-        "Trello" as Kanban, Excalidraw for drafting ideas and Github's branching & "pull request" for merging approval.
-        </br
-        ></br>
-        The backend was built by NodeJs with Jest for testing each API endpoint. The server is deployed in Render and data is stored in ElephantSQL. 
-        For the front end,  ReactJs is used with the data management package "Redux". Rest API are used for communication between the front end and the back end.
-        </br>
-        </br>
-        <u>Features of the application:</u>  </br>
-        - Users can view the articles </br>
-        - Users can leave a comment on articles </br>
-        - Users can vote for articles</br>
-        - Users can share articles</br>
-        - Users can sort the article by date, title or authors, etc.
-        </br>
-        </br>
-        Other features: </br>
-        - "Debounce" is applied in the "Vote" function to prevent "over-click" or abuse of the function
-        </br>
-        </br>
-        Remark:</br>
-        - Login / Signup is under development.   </br>
-        - Image in articles is randomly generated. It is not related to the context of the articles `,
+    id: 0,
+    projectType: "JavaScript",
+    projectYear: "2016",
+    projectName: "Longlife Production Limited",
+    techs: ["HTML", "CSS", "Javascript"],
+    description: null,
+    img: "long-life.png",
+    socials: {
+      link: "http://www.longlifeproduction.com",
+      github: null,
+    },
   },
   {
-    id: 2,
-    projectType: "React Native",
-    projectYear: "2023",
-    projectName: "NC-Tarot Journal",
-    // projectIconUrl: require(""),
-    // projectDescription: 1,
+    id: 1,
+    projectType: "Django",
+    projectYear: "2018",
+    projectName: "OPTION KATZE",
     techs: [
-      "ReactNative",
-      "Tailwind",
-      "TypeScript",
-      "NodeJs",
-      "TypeScript",
-      "PSQL",
-      "Render (BE hosting)",
-      "Jest",
+      "Python",
+      "Django",
+      "MySQL",
+      "Javascript",
+      "JQuery",
+      "HTML",
+      "CSS",
+      "Google Cloud Platform",
+      "Google AdSense",
     ],
-    description: `
-    
-    "Tarot Journal" is my team project during the Northcoders course. 
-    It is a tarot card application where users can learn how to use tarot cards and the interpretation of each card.
-    <br>
-    <br>
-    I was responsible for the back end construction of this project. The back end of the app was built by NodeJs with TypeScript and Jest was adopted for testing each API endpoint.
-    <br>
-    <br>
-    I also handled the authentication process of the application. When the user is signing up, a 4-digit verification code will send to the user's email.  The code is required to complete the sign-up process.  A JSON Web Token (JWT) will be created and returned in successful sign-up. 
-    <br>
-    <br>
-    For the front end, I took part in configuring the Bottom Tab and Stack navigation in React Native. Moreover, I designed and worked on the authentication procedures and state management when the JWT is returned from the server to React Native.
-    <br>
-    <br>
-    Please click the "View Project Details" to view the API documentation that I made as well as the demo video of the sign-up process.   
-    <br>
-    <br>
-    The front end of the application is under construction. `,
+    description: null,
+    img: "option-katze.png",
+    socials: {
+      link: null,
+      github: null,
+    },
+  },
+
+  {
+    id: 2,
+    projectType: "Django",
+    projectYear: "2019",
+    projectName: "Option Katze II",
+    techs: ["Python", "Django", "MySQL", "Javascript", "JQuery", "HTML", "CSS"],
+    description: null,
+    img: "option-katze-2.png",
+    socials: {
+      link: null,
+      github: null,
+    },
   },
 
   {
     id: 3,
-    projectType: "React Native",
-    projectYear: "2023",
-    projectName: "NC-Tarot Journal",
-    // projectIconUrl: require(""),
-    // projectDescription: 1,
+    projectType: "VueJS",
+    projectYear: "2022",
+    projectName: "Ellow Tradition",
     techs: [
-      "ReactNative",
-      "Tailwind",
-      "TypeScript",
+      "Vue-CLI",
+      "Vuex",
       "NodeJs",
       "TypeScript",
-      "PSQL",
-      "Render (BE hosting)",
-      "Jest",
+      "MongoDB",
+      "REST API",
+      "JWT",
+      "Stripe API",
+      "CSS",
     ],
-    description: `
-    
-    "Tarot Journal" is my team project during the Northcoders course. 
-    It is a tarot card application where users can learn how to use tarot cards and the interpretation of each card.
-    <br>
-    <br>
-    I was responsible for the back end construction of this project. The back end of the app was built by NodeJs with TypeScript and Jest was adopted for testing each API endpoint.
-    <br>
-    <br>
-    I also handled the authentication process of the application. When the user is signing up, a 4-digit verification code will send to the user's email.  The code is required to complete the sign-up process.  A JSON Web Token (JWT) will be created and returned in successful sign-up. 
-    <br>
-    <br>
-    For the front end, I took part in configuring the Bottom Tab and Stack navigation in React Native. Moreover, I designed and worked on the authentication procedures and state management when the JWT is returned from the server to React Native.
-    <br>
-    <br>
-    Please click the "View Project Details" to view the API documentation that I made as well as the demo video of the sign-up process.   
-    <br>
-    <br>
-    The front end of the application is under construction. `,
+    description: null,
+    img: "ellow-tradition.png",
+    socials: {
+      link: "https://ellowtradition-vue.web.app/index",
+      github: null,
+    },
   },
 
   {
     id: 4,
-    projectType: "React Native",
-    projectYear: "2023",
-    projectName: "NC-Tarot Journal",
-    // projectIconUrl: require(""),
-    // projectDescription: 1,
+    projectType: "Python",
+    projectYear: "2022",
+    projectName: "Stock Data Scrapper",
+    techs: ["Python", "Selenium"],
+    description: "",
+    img: "morningstar-scrapper.png",
+    socials: {
+      link: null,
+      github: null,
+    },
+  },
+  {
+    id: 5,
+    projectType: "Docker (Cross Containers)",
+    projectYear: "2022",
+    projectName: "PHP Server",
     techs: [
-      "ReactNative",
-      "Tailwind",
-      "TypeScript",
-      "NodeJs",
-      "TypeScript",
-      "PSQL",
-      "Render (BE hosting)",
-      "Jest",
+      "Vue-Cli",
+      "SCSS",
+      "PHP",
+      "MySQL",
+      "Ngnix",
+      "Docker",
+      "Docker Composer",
     ],
-    description: `
-    
-    "Tarot Journal" is my team project during the Northcoders course. 
-    It is a tarot card application where users can learn how to use tarot cards and the interpretation of each card.
-    <br>
-    <br>
-    I was responsible for the back end construction of this project. The back end of the app was built by NodeJs with TypeScript and Jest was adopted for testing each API endpoint.
-    <br>
-    <br>
-    I also handled the authentication process of the application. When the user is signing up, a 4-digit verification code will send to the user's email.  The code is required to complete the sign-up process.  A JSON Web Token (JWT) will be created and returned in successful sign-up. 
-    <br>
-    <br>
-    For the front end, I took part in configuring the Bottom Tab and Stack navigation in React Native. Moreover, I designed and worked on the authentication procedures and state management when the JWT is returned from the server to React Native.
-    <br>
-    <br>
-    Please click the "View Project Details" to view the API documentation that I made as well as the demo video of the sign-up process.   
-    <br>
-    <br>
-    The front end of the application is under construction. `,
+    description: null,
+    img: "php-server.png",
+    socials: {
+      link: "https://wilphpserver.epizy.com/?i=1",
+      github:
+        "https://github.com/wilws/docker2_cross_container_php-mysql-nginx-vue.git",
+    },
   },
 
   {
-    id: 5,
-    projectType: "React Native",
-    projectYear: "2023",
-    projectName: "NC-Tarot Journal",
-    // projectIconUrl: require(""),
-    // projectDescription: 1,
-    techs: [
-      "ReactNative",
-      "Tailwind",
-      "TypeScript",
-      "NodeJs",
-      "TypeScript",
-      "PSQL",
-      "Render (BE hosting)",
-      "Jest",
-    ],
-    description: `
-    
-    "Tarot Journal" is my team project during the Northcoders course. 
-    It is a tarot card application where users can learn how to use tarot cards and the interpretation of each card.
-    <br>
-    <br>
-    I was responsible for the back end construction of this project. The back end of the app was built by NodeJs with TypeScript and Jest was adopted for testing each API endpoint.
-    <br>
-    <br>
-    I also handled the authentication process of the application. When the user is signing up, a 4-digit verification code will send to the user's email.  The code is required to complete the sign-up process.  A JSON Web Token (JWT) will be created and returned in successful sign-up. 
-    <br>
-    <br>
-    For the front end, I took part in configuring the Bottom Tab and Stack navigation in React Native. Moreover, I designed and worked on the authentication procedures and state management when the JWT is returned from the server to React Native.
-    <br>
-    <br>
-    Please click the "View Project Details" to view the API documentation that I made as well as the demo video of the sign-up process.   
-    <br>
-    <br>
-    The front end of the application is under construction. `,
-  },
-  {
     id: 6,
-    projectType: "React Native",
+    projectType: "React",
     projectYear: "2023",
-    projectName: "NC-Tarot Journal",
-    // projectIconUrl: require(""),
-    // projectDescription: 1,
-    techs: [
-      "ReactNative",
-      "Tailwind",
-      "TypeScript",
-      "NodeJs",
-      "TypeScript",
-      "PSQL",
-      "Render (BE hosting)",
-      "Jest",
-    ],
-    description: `
-    
-    "Tarot Journal" is my team project during the Northcoders course. 
-    It is a tarot card application where users can learn how to use tarot cards and the interpretation of each card.
-    <br>
-    <br>
-    I was responsible for the back end construction of this project. The back end of the app was built by NodeJs with TypeScript and Jest was adopted for testing each API endpoint.
-    <br>
-    <br>
-    I also handled the authentication process of the application. When the user is signing up, a 4-digit verification code will send to the user's email.  The code is required to complete the sign-up process.  A JSON Web Token (JWT) will be created and returned in successful sign-up. 
-    <br>
-    <br>
-    For the front end, I took part in configuring the Bottom Tab and Stack navigation in React Native. Moreover, I designed and worked on the authentication procedures and state management when the JWT is returned from the server to React Native.
-    <br>
-    <br>
-    Please click the "View Project Details" to view the API documentation that I made as well as the demo video of the sign-up process.   
-    <br>
-    <br>
-    The front end of the application is under construction. `,
+    projectName: "NC-Gallery",
+    techs: ["ReactJs", "SCSS", "Firebase", "REST API"],
+    description: null,
+    img: "nc-gallery.png",
+    socials: {
+      link: "https://nc-gallery-49dca.web.app/",
+      github: "https://github.com/wilws/nc-gallery",
+    },
   },
 
   {
     id: 7,
+    projectType: "React",
+    projectYear: "2023",
+    projectName: "NC-NEWS",
+    techs: [
+      "ReactJs",
+      "SCSS",
+      "Redux",
+      "NodeJs",
+      "ExpressJs",
+      "PSQL",
+      "Jest",
+      "REST API",
+      "Netlify",
+      "Render",
+      "ElephantSQL",
+    ],
+    description: null,
+    img: "nc-news.png",
+    socials: {
+      link: "https://glittering-pegasus-3b6e85.netlify.app/",
+      github: "https://github.com/waiwong-nc/nc-news",
+    },
+  },
+
+  {
+    id: 8,
     projectType: "React Native",
     projectYear: "2023",
-    projectName: "NC-Tarot Journal",
-    // projectIconUrl: require(""),
-    // projectDescription: 1,
+    projectName: "Tarot Journal",
     techs: [
-      "ReactNative",
-      "Tailwind",
-      "TypeScript",
       "NodeJs",
       "TypeScript",
       "PSQL",
-      "Render (BE hosting)",
+      "ReactNative",
+      "Tailwind",
+      "Render",
       "Jest",
     ],
-    description: `
-    
-    "Tarot Journal" is my team project during the Northcoders course. 
-    It is a tarot card application where users can learn how to use tarot cards and the interpretation of each card.
-    <br>
-    <br>
-    I was responsible for the back end construction of this project. The back end of the app was built by NodeJs with TypeScript and Jest was adopted for testing each API endpoint.
-    <br>
-    <br>
-    I also handled the authentication process of the application. When the user is signing up, a 4-digit verification code will send to the user's email.  The code is required to complete the sign-up process.  A JSON Web Token (JWT) will be created and returned in successful sign-up. 
-    <br>
-    <br>
-    For the front end, I took part in configuring the Bottom Tab and Stack navigation in React Native. Moreover, I designed and worked on the authentication procedures and state management when the JWT is returned from the server to React Native.
-    <br>
-    <br>
-    Please click the "View Project Details" to view the API documentation that I made as well as the demo video of the sign-up process.   
-    <br>
-    <br>
-    The front end of the application is under construction. `,
+    description: null,
+    img: null,
+    socials: {
+      link: "https://tarot-api-k1ed.onrender.com",
+      github: "https://github.com/waiwong-nc/be-tarot",
+    },
+  },
+
+  {
+    id: 9,
+    projectType: "NextJS",
+    projectYear: "2023",
+    projectName: "POKÉ-PEDIA",
+    techs: ["NodeJs", "Tailwind", "SCSS", "TypeScript", "Netlify", "Redux"],
+    description: "",
+    img: "pokepedia.png",
+    socials: {
+      link: "https://dreamy-druid-fe65b5.netlify.app/",
+      github: "https://github.com/wilws/pokepedia.git",
+    },
+  },
+  {
+    id: 10,
+    projectType: "VueJS",
+    projectYear: "2022",
+    projectName: "Personal Website",
+    techs: ["Vue-Cli", "SCSS","Firebase", "Netlify"],
+    description: "",
+    img: "wws.png",
+    socials: {
+      link: "https://github.com/wilws/WWS.git",
+      github: "https://jazzy-paletas-8e067c.netlify.app/",
+    },
+  },
+
+  {
+    id: 11,
+    projectType: "Django Rest Frame Work",
+    projectYear: "2023",
+    projectName: "Schnauzer Bond Screener",
+    techs: [
+      "Python",
+      "Django",
+      "Django Rest Framework",
+      "Selenium",
+      "Beautiful Soup",
+    ],
+    description: "",
+    img: "schnauzer.png",
+    socials: {
+      link: null,
+      github: "https://github.com/wilws/schnauzer",
+    },
   },
 ];
 

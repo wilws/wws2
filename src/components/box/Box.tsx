@@ -1,13 +1,6 @@
-import { useEffect, useState, useRef,FC } from "react";
+import { useEffect, useState, useRef} from "react";
+import styleSettings from "@/data/styleSettings";
 
-// type ProjectDetailsType = {
-//   projectId:string;
-//   projectType:string;
-//   projectYear:string;
-//   projectName:string;
-//   projectTech:Array<string>;
-//   projectDescription:string;
-// }
 
 type PropsType = {
   boxIsClicked: boolean;
@@ -29,6 +22,7 @@ type PropsType = {
 };
 
 const Box = (props: PropsType): JSX.Element => {
+
   const {
     boxIsClicked,
     boxIsClikedListener,
@@ -39,6 +33,16 @@ const Box = (props: PropsType): JSX.Element => {
     boxIsHovered,
     projectDetail,
   } = props;
+
+
+  const { id, projectType, projectYear, projectName, techs, description, img } =
+    projectDetail;
+
+  const [iconBgColor, setIconbgColor] =
+    useState<string>("rgb(255, 255, 255)");
+
+  const imgRef = useRef<HTMLImageElement | null>(null);
+
   const [boxClass, setBoxClass] = useState<string>("box");
   const [iAmTargetBox, setIAmTargetBox] = useState<boolean>(false);
   const [iAmHoveredBox, setIAmHoveredBox] = useState<boolean>(false);
@@ -81,6 +85,20 @@ const Box = (props: PropsType): JSX.Element => {
     }
   }, [boxIsClicked]);
 
+
+ useEffect(() => {
+   if (!imgRef.current) return;
+
+   let styleSetting = [];
+   styleSetting = styleSettings.filter(
+     (project) => project.projectId.toString() === id.toString()
+   );
+
+   if (!styleSetting.length) return;
+
+   imgRef.current.style.backgroundColor = styleSetting[0].iconBackgroundColor;
+ }, [iconBgColor]);
+
   // Function trigger when this box is clicked
   function clickBox() {
     setIAmTargetBox(true);
@@ -121,8 +139,14 @@ const Box = (props: PropsType): JSX.Element => {
         onMouseEnter={mouseEnter}
         onMouseLeave={mouseLeave}
       >
-        <div className="face-x">{projectDetail?.projectName && projectDetail?.projectName}</div>
-        <div className="face-y">Y</div>
+        <div className="face-x">{projectName}</div>
+        <div className="face-y">
+          {img ? (
+            <img src={`/static/project-logo/${img}`} alt="/" ref={imgRef} />
+          ) : (
+            <div><span>{projectName}</span></div>
+          )}
+        </div>
         <div className="face-z">Z</div>
       </div>
     </div>

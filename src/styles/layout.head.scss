@@ -15,16 +15,15 @@ $screen-width-2xl: 1536px;
     width: 100%;
     height: 64px;
     max-height: 64px;
-    min-width: $screen-width-2sm;
+    min-width: calc($screen-width-2sm - 30px);
     padding: 0px 20px;
     display: flex;
     align-items: center;
     z-index: 10;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
+    justify-content: space-between;
   
-    @media (min-width:400px) {
-          justify-content: space-between;
-    }
+    @media (min-width:400px) {}
     @media (min-width: $screen-width-md) {}
     @media (min-width: $screen-width-lg) {}
     @media (min-width: $screen-width-xl) {}
@@ -36,7 +35,7 @@ $screen-width-2xl: 1536px;
         font-family:"Helvetica Neue";
         width:40%;
         max-width:170px;
-        margin-left: 10px;
+        // margin-left: 10px;
         line-height:20px;
         text-transform: uppercase;
         font-weight: 200;
@@ -53,7 +52,7 @@ $screen-width-2xl: 1536px;
         min-width:140px;
         height:40px;
         background-color: white;
-        border: rgb(0, 0, 0) double 4px;
+        border: rgb(0, 0, 0) solid 1px;
         border-radius: 10px;
         text-transform: uppercase;
         color:rgb(0, 0, 0);

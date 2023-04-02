@@ -27,7 +27,9 @@ $screen-width-2xl: 1536px;
   
     @media (min-width:400px) {}
     @media (min-width: $screen-width-md) {}
-    @media (min-width: $screen-width-lg) {}
+    @media (min-width: $screen-width-lg) {
+        border-bottom: none;
+    }
     @media (min-width: $screen-width-xl) {}
     @media (min-width: $screen-width-2xl) {} 
 

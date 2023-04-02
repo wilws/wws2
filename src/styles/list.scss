@@ -86,7 +86,7 @@ $screen-width-2xl: 1536px;
     }
 }
 
-@keyframes addMarginBottom {
+@keyframes addMarginTop {
     from {
         margin-top: 0;
     }
@@ -108,8 +108,12 @@ $screen-width-2xl: 1536px;
     cursor: pointer;
     list-style: none;
     perspective: 2000px;
-    border:white solid thin;
-    animation: addMarginBottom .5s 2s forwards;
+    // border:white solid thin;
+    animation: addMarginTop .5s 2s forwards;
+
+    &:nth-child(1) {
+        animation: none;
+    }
 
     @for $i from 1 through 7 {
     &:nth-child(#{$i}) {

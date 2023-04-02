@@ -17,7 +17,7 @@ $screen-width-2xl: 1536px;
 
 // profile/Skills.tsx
 .profile-skills {
-    padding-bottom: 30px;  // Prevent the blockage of browser bottom navigation
+    padding-bottom: 50px;  // Prevent the blockage of browser bottom navigation
 
     li{
         position: relative;
@@ -184,9 +184,9 @@ $screen-width-2xl: 1536px;
 .profile {
     position:fixed;
     left:100%;
-    top:80px;
+    top:69px;
     width:$profile-width;
-    height: calc($profile-height - 80px); // minus the top value
+    height: calc($profile-height - 69px); // minus the top value
     margin:0;
     padding:0;
     padding-bottom:100px;

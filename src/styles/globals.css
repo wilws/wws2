@@ -86,7 +86,7 @@ body {
 }
 
 body {
-  position: fixed;
+  /* position: fixed; */
   /* color: rgb(var(--foreground-rgb)); */
   /* background: linear-gradient(
       to bottom,

@@ -3,7 +3,7 @@ import PortfolioMedia from "../../components/portfolio/PortfolioMedia";
 
 type PropsType = {
   sections: Array<SectionType>;
-  folder:string;
+  folder:string | null;
 };
 
 const PortfolioAdditionalInfo = (props: PropsType): JSX.Element => {

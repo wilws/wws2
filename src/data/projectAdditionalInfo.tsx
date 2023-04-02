@@ -13,7 +13,7 @@ export type SectionType = {
 
 export type projectAdditionalInfoType = {
     id:number;
-    folder:string;
+    folder:string | null;
     projectId:number;
     sections:Array<SectionType>;
 }

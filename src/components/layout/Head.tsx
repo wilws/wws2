@@ -11,7 +11,7 @@ const Head = () => {
 
     return (
       <div className="head">
-        <h1>Wilson Wong 2</h1>
+        <h1>Wilson Wong</h1>
         <button className={displayProfile ? "display" : ""} onClick={displayProfileController}>
           <span>Who am I?</span>
         </button>

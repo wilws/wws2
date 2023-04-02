@@ -25,7 +25,7 @@ $screen-width-2xl: 1536px;
     overflow: hidden;
     border-bottom: 5px black solid;
   
-    @media (min-width:400px) {}
+
     @media (min-width: $screen-width-md) {}
     @media (min-width: $screen-width-lg) {
         border-bottom: none;
